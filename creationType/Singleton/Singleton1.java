@@ -14,15 +14,20 @@ package Singleton;
 public class Singleton1 {
 
     private static Singleton1 uniqueInstance;
-    
+    private static int count;
     private Singleton1() {
     }
 
     public static Singleton1 getUniqueInstance() {
+    	
         if (uniqueInstance == null) {
             uniqueInstance = new Singleton1();
+            count++;
         }
         return uniqueInstance;
+    }
+    public static int numberOfInstantiations(){
+    	return count;
     }
 }
 
