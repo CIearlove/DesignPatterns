@@ -10,7 +10,7 @@ public class TestCase1 {
 		ExecutorService executor = Executors.newCachedThreadPool();
 		
 		for(int i=0;i<100;i++){
-			executor.execute(new Instantiate());
+			executor.execute(new Instantiate1());
 		}
 		
 		executor.shutdown();
@@ -25,7 +25,7 @@ public class TestCase1 {
 	}
 }
 	
-class Instantiate implements Runnable{
+class Instantiate1 implements Runnable{
 
 	@Override
 	public void run() {
