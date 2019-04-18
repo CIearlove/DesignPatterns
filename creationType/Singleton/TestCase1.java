@@ -20,16 +20,16 @@ public class TestCase1 {
 			
 		}
 		System.out.println(Singleton1.numberOfInstantiations());
-		
-		
 	}
-}
 	
-class Instantiate1 implements Runnable{
+	public static class Instantiate1 implements Runnable{
 
-	@Override
-	public void run() {
-		Singleton1.getUniqueInstance();
+		@Override
+		public void run() {
+			Singleton1.getUniqueInstance();
+		}
+		
 	}
-	
 }
+	
+
