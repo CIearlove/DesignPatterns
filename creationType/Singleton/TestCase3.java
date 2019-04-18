@@ -23,13 +23,15 @@ public class TestCase3 {
 		
 		
 	}
-}
 	
-class Instantiate3 implements Runnable{
+	public static class Instantiate3 implements Runnable{
 
-	@Override
-	public void run() {
-		Singleton3.getUniqueInstance();
+		@Override
+		public void run() {
+			Singleton3.getUniqueInstance();
+		}
+		
 	}
-	
 }
+	
+
