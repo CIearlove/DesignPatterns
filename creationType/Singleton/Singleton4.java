@@ -31,6 +31,7 @@ public class Singleton4 {
 	private volatile static int count; 
 	
     private Singleton4() {
+    	count++;
     }
 
     public static  Singleton4 getUniqueInstance() {
@@ -40,7 +41,6 @@ public class Singleton4 {
         	synchronized(Singleton4.class){
         		if (uniqueInstance == null){
         			uniqueInstance = new Singleton4();
-                    count++;
         		}
         	}
             

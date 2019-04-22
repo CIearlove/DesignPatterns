@@ -14,12 +14,12 @@ public class Singleton2 {
 	private static int count;
 	
 	private Singleton2() {
+		count++;
     }
 
     public static Singleton2 getUniqueInstance() {
         if (uniqueInstance == null) {
             uniqueInstance = new Singleton2();
-            count++;
         }
         return uniqueInstance;
     }

@@ -15,12 +15,12 @@ public class Singleton3 {
 	private static int count;
 	
     private Singleton3() {
+    	count++;
     }
 
     public static synchronized Singleton3 getUniqueInstance() {
         if (uniqueInstance == null) {
             uniqueInstance = new Singleton3();
-            count++;
         }
         return uniqueInstance;
     }
