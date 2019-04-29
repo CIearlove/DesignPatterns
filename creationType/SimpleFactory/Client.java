@@ -24,9 +24,8 @@ public class Client {
 	*/
 	
     public static void main(String[] args){
-    	int type = 1;
-    	Product product;
-    	SimpleFactory sf = new SimpleFactory();
-    	product = sf.createProduct(type);
+    	int type = 2;
+    	Product product = SimpleFactory.createProduct(type);
+    	System.out.println("Product---->"+product.getProductName());
     }
 }
