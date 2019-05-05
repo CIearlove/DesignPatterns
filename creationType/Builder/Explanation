@@ -1,0 +1,12 @@
+# Intent
+# 封装一个对象的构造过程，并允许按步骤构造。
+
+# Class Diagram
+# 建造者模式分离了对象子组件的单独构造（由Builder来负责）和装配（由Director负责）。从而可以构造出复杂的对象。
+# 由于实现了构建和装配的解耦。不同的构建器，相同的装配，也可以做出不同的对象；相同的构建器，不同的装配顺序也可以做出不同的对象。
+# 实现了构建算法、装配算法的解耦，实现了更好的复用。
+
+# 开发中应用场景：
+# StringBuilder类的append方法
+# SQL中的PreparedStatement
+# JDOM中，DomBuilder SAXBuilder
